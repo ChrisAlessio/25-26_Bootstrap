@@ -73,37 +73,38 @@
     <div class="row bg-light rounded-top mt-3">
         <div class="col display-1">
             My Skills!
+            <button type="button" class="btn btn-success" data-bs-toggle="popover" title="Skills" data-bs-content="This is a brief overview of skills I have or what I can do.">
+                Skills
+            </button>
         </div>
     </div>
     <div class="row bg-light">
         <div class="col-3 display-5 shadow mt-4 mb-4 me-5 ms-5 text-center">
             Coding
-            <img src="code.jpg" class="img-fluid">
+            <img src="code.jpg" class="img-fluid m-1">
         </div>
         <div class="col-3 display-5 shadow mt-4 mb-4 me-5 ms-5 text-center">
             Engineering
-            <img src="engineering.jpg" class="img-fluid">
+            <img src="engineering.jpg" class="img-fluid m-1">
         </div>
         <div class="col-3 display-5 shadow mt-4 mb-4 me-5 ms-5 text-center">
-
-            <div class="spinner-border text-muted border-3"></div>
+            Badminton </br>
+            <div class="spinner-border text-primary border-3"></div>
 
         </div>
     </div>
-    <div class="row bg-light">
+    <div class="row bg-light rounded-bottom">
         <div class="col-3 display-5 shadow mt-4 mb-4 me-5 ms-5 text-center">
-            Skill4
+            Running
+            <img src="running.jpg" class="img-fluid m-1">
         </div>
         <div class="col-3 display-5 shadow mt-4 mb-4 me-5 ms-5 text-center">
-            Skill5
+            Writing
+            <img src="17576.jpg" class="img-fluid m-1">
         </div>
         <div class="col-3 display-5 shadow mt-4 mb-4 me-5 ms-5 text-center">
-            Skill6
-        </div>
-    </div>
-    <div class="row bg-light rounded-bottom mb-3">
-        <div class="col display-5">
-            More content
+            Problem Solving
+            <img src="problem.jpg" class="img-fluid m-1">
         </div>
     </div>
     <div class="row rounded bg-light m-3">
@@ -114,5 +115,11 @@
 
 </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script>
+    var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+    var popoverList = popoverTriggerList.map(function (popoverTriggerE1){
+        return new bootstrap.Popover(popoverTriggerE1)
+    })
+</script>
 </body>
 </html>
